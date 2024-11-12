@@ -1,0 +1,23 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      authentication-database: admin
+      username: root
+      password: example
+      database: test-db
+
+client:
+  comments:
+    url: http://localhost:8082
+
+resilience4j.circuitbreaker:
+  instances:
+    comments:
+      slidingWindowSize: 8
+      minimumNumberOfCalls: 4
+#      slowCallDurationThreshould: 2000 # <- Max waiting time for client
+#      slowCallRateThreshould: 50 # <- Percentage calls for client
+      permittedNumberOfCallsInHalfOpenState: 2
+      waitDurationInOpenState: 10000

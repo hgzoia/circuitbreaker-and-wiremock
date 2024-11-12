@@ -1,0 +1,22 @@
+{
+   "request":{
+      "method":"GET",
+      "url":"/comments/6732122ff796f047c144defc"
+   },
+   "response":{
+      "status":200,
+      "headers":{
+         "Content-Type":"application/json"
+      },
+      "jsonBody":[
+         {
+            "author":"Hugo",
+            "text":"Its a good course"
+         },
+         {
+            "author":"Tifany",
+            "text":"5 star course, awesome!"
+         }
+      ]
+   }
+}
